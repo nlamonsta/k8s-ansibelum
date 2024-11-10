@@ -5,6 +5,9 @@
     name:
       - libguestfs-tools
       - python3-libvirt
+      - systemd-networkd
+      - systemd-resolved
+      - netplan
     state: present
   become: yes
 
