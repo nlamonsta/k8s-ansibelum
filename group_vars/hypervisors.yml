@@ -4,4 +4,4 @@
     ram_mb: 2048
     cleanup: no
     net: default
-    ssh_pub_key: "/home/emrah/.ssh/id_rsa.pub"
+    ssh_pub_key: "/home/neil/.ssh/id_rsa.pub"
