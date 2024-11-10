@@ -1,8 +1,8 @@
 ---
-base_image_name: ubuntu-24.04-server-cloudimg-arm64.img
+base_image_name: Rocky-9-GenericCloud-Base-9.4-20240509.0.x86_64.qcow2
 #base_image_url: https://cloud-images.ubuntu.com/releases/focal/release/{{ base_image_name }}
-base_image_url: https://cloud-images.ubuntu.com/releases/24.04/release/ 
-base_image_sha: da72ea5302d0c8a1fc526a5fe78e159aa2b81c02b97d82105f0ede98d238fbe0
+base_image_url: https://dl.rockylinux.org/pub/rocky/9/images/x86_64/{{ base_image_name }}
+base_image_sha: 2b521fdff4e4d1a0f1a10b53579a34bba8081ce5eb08e64e3ff22289557f0cfa
 libvirt_pool_dir: "/var/lib/libvirt/images"
 vm_name_haproxy: haproxy
 vm_name_master: master
