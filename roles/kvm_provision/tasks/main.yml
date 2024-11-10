@@ -32,6 +32,7 @@
       url: "{{ base_image_url }}"
       dest: "/tmp/{{ base_image_name }}"
       checksum: "sha256:{{ base_image_sha }}"
+      force: yes
   - name: Copy base image to libvirt directory
     copy:
       dest: "{{ libvirt_pool_dir }}/{{ vm_name_haproxy }}.raw"
@@ -64,6 +65,7 @@
       url: "{{ base_image_url }}"
       dest: "/tmp/{{ base_image_name }}"
       checksum: "sha256:{{ base_image_sha }}"
+      force: yes
   - name: Copy base image to libvirt directory
     copy:
       dest: "{{ libvirt_pool_dir }}/{{ vm_name_master }}.raw"
@@ -99,6 +101,7 @@
       url: "{{ base_image_url }}"
       dest: "/tmp/{{ base_image_name }}"
       checksum: "sha256:{{ base_image_sha }}"
+      force: yes
   - name: Copy base image to libvirt directory
     copy:
       dest: "{{ libvirt_pool_dir }}/{{ vm_name_worker1 }}.raw"
@@ -134,6 +137,7 @@
       url: "{{ base_image_url }}"
       dest: "/tmp/{{ base_image_name }}"
       checksum: "sha256:{{ base_image_sha }}"
+      force: yes
   - name: Copy base image to libvirt directory
     copy:
       dest: "{{ libvirt_pool_dir }}/{{ vm_name_worker2 }}.raw"
