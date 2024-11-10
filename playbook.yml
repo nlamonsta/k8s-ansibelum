@@ -1,0 +1,5 @@
+- name: Deploys VM based on cloud image
+  hosts: hypervisors
+  gather_facts: yes
+  roles:
+    - kvm_provision
